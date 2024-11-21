@@ -1,9 +1,9 @@
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
-export default function Index() {
+const Index = () => {
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text className="text-red-500">Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <Redirect href="/(auth)/welcome" />
   );
 }
+
+export default Index
