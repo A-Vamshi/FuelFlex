@@ -16,7 +16,7 @@ export const onBoarding = [
     {
         id: 3,
         title: "Order now",
-        desription: "Create an account and get fuel delivered to you now. \nClick get started now",
+        desription: "Create an account and get fuel delivered to you now. \nClick get started",
         image: onboarding3,
     }
 ]
