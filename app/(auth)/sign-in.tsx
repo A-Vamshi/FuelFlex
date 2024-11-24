@@ -1,19 +1,40 @@
 import { View, Text, Image, ScrollView } from 'react-native'
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { top } from '@/assets'
 import InputField from '@/components/InputField'
 import CustomButton from '@/components/CustomButton'
 import OAuth from '@/components/OAuth'
-import { Link } from 'expo-router'
+import { Link, useRouter } from 'expo-router'
+import { useSignIn } from '@clerk/clerk-expo'
 
 const SignIn = () => {
+  const { signIn, setActive, isLoaded } = useSignIn()
+  const router = useRouter()
   const [form, setForm] = useState({
     email: "",
     password: ""
   })
-  const onSignInPress = () => {
+  const onSignInPress = useCallback(async () => {
+    if (!isLoaded) {
+      return
+    }
 
-  }
+    try {
+      const signInAttempt = await signIn.create({
+        identifier: form.email,
+        password: form.password,
+      })
+
+      if (signInAttempt.status === 'complete') {
+        await setActive({ session: signInAttempt.createdSessionId })
+        router.replace('/(root)/(tabs)/home')
+      } else {
+        console.error(JSON.stringify(signInAttempt, null, 2))
+      }
+    } catch (err: any) {
+      console.error(JSON.stringify(err, null, 2))
+    }
+  }, [isLoaded, form.email, form.password])
   return (
     <ScrollView className='flex bg-white' showsVerticalScrollIndicator={false}>
       <View className='flex-1 bg-white'>
@@ -49,7 +70,6 @@ const SignIn = () => {
             <Text className='text-outline'>Sign Up</Text>
           </Link>
         </View>
-        {/* Verification */}
       </View>
     </ScrollView>
   )
