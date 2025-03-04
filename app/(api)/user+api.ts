@@ -17,3 +17,10 @@ export async function POST(request: Request) {
         return Response.json({error: error}, {status: 500}) 
     }
 }
+export async function GET(request: Request) {
+    try {
+        
+    } catch (error) {
+        
+    }
+}

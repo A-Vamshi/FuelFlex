@@ -53,7 +53,7 @@ const SignIn = () => {
             onChangeText={(v:string) => setForm({...form, email: v})}
           />
           <InputField
-            label="Passwoord"
+            label="Password"
             placeholder="Enter your password"
             value={form.password}
             onChangeText={(v:string) => setForm({...form, password: v})}
