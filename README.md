@@ -1,62 +1,77 @@
-# Welcome to your Expo app 👋
+# FuelFlex
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<img src="/assets/images/1.jpeg" alt="drawing" width="200"/> <img src="/assets/images/2.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/3.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/4.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/5.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/6.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/7.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/8.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/9.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/10.jpeg" alt="drawing" width="200"/>
 
-## Get started
 
-1. Install dependencies
 
-   ```bash
+FuelFlex is a convenient mobile application that allows users to order fuel online from the comfort of their homes. Built using **React Native**, **Expo**, **Clerk**, and **Nativewind**, the app provides a seamless and user-friendly experience for fuel delivery services.
+
+## Features
+
+- **User Authentication**: Secure login and registration using Clerk.
+- **Fuel Ordering**: Easily place orders for different types of fuel.
+- **Payment Integration**: Secure online payment options.
+- **Order History**: View past orders and invoices.
+
+## Tech Stack
+
+- **React Native**: Cross-platform mobile application development.
+- **Expo**: Simplified development, testing, and deployment.
+- **Clerk**: Authentication and user management.
+- **Nativewind**: Tailwind-like styling for React Native.
+
+## Installation
+
+Follow these steps to set up the project on your local machine:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/A-Vamshi/FuelFlex.git
+   ```
+
+2. Navigate to the project directory:
+   ```sh
+   cd FuelFlex
+   ```
+
+3. Install dependencies:
+   ```sh
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+4. Start the Expo server:
+   ```sh
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Usage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Run the app on an emulator or a physical device using the Expo Go app.
+- Sign up or log in using Clerk authentication.
+- Select the type of fuel, enter your location, and place an order.
+- Track the order and receive notifications until delivery.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Contributing
 
-## Get a fresh project
+Contributions are welcome! Follow these steps:
+1. Fork the repository.
+2. Create a new branch (`feature-branch`).
+3. Make your changes and commit them.
+4. Push to your fork and create a pull request.
 
-When you're ready, run:
+## License
 
-```bash
-npm run reset-project
-```
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contact
 
-## Learn more
+For any questions or feedback, feel free to reach out at **your.email@example.com**.
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-
-npm scripts to download:
-@clerk/clerk-expo
-nativewind 
-expo-blur 
-@react-navigation/drawer  
-@clerk/clerk-expo
-expo-secure-store
-
-
-npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
